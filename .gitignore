@@ -1,0 +1,22 @@
+# Java backend
+backend/out/
+backend/*.txt
+backend/sources.txt
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+*.iml
+.vscode/
+
+# Original playground (keep the source, ignore its build artefacts)
+playground/node_modules/
+playground/dist/
