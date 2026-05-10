@@ -1,0 +1,200 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1560" height="920" viewBox="0 0 1560 920">
+<rect width="1560" height="920" fill="#FAFAFA"/>
+<text x="780" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">OOP Neural Network Playground — UML Class Diagram</text>
+<text x="780" y="60" text-anchor="middle" font-size="11" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Java Backend · 39 source files · 3 interfaces · 5 abstract classes · 5 exception types</text>
+<rect x="430" y="70" width="26" height="16" rx="2" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<text x="462" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Interface</text>
+<rect x="545" y="70" width="26" height="16" rx="2" fill="#F5F5F5" stroke="#555555" stroke-width="1.5"/>
+<text x="577" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Abstract class</text>
+<rect x="660" y="70" width="26" height="16" rx="2" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="692" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Concrete class</text>
+<rect x="775" y="70" width="26" height="16" rx="2" fill="#EEEEEE" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,4"/>
+<text x="807" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">External (JDK)</text>
+<line x1="890" y1="78" x2="916" y2="78" stroke="#555555" stroke-width="1.5"/>
+<polygon points="916,78 910,74 910,82" fill="white" stroke="#555555" stroke-width="1.5"/>
+<text x="922" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">extends</text>
+<line x1="990" y1="78" x2="1016" y2="78" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<polygon points="1016,78 1010,74 1010,82" fill="white" stroke="#555555" stroke-width="1.5"/>
+<text x="1022" y="82" font-size="10" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">implements</text>
+<rect x="20" y="95" width="340" height="440" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="190" y="113" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Activation Functions</text>
+<rect x="375" y="95" width="370" height="440" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="560" y="113" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Regularization &amp; Error Functions</text>
+<rect x="760" y="95" width="370" height="440" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="945" y="113" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Exception Hierarchy</text>
+<rect x="1145" y="95" width="400" height="440" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="1345" y="113" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Dataset Generators</text>
+<rect x="20" y="545" width="500" height="350" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="270" y="563" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">API Layer</text>
+<rect x="535" y="545" width="370" height="350" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="720" y="563" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Neural Network Core</text>
+<rect x="920" y="545" width="625" height="350" rx="6" fill="#F8F9FD" stroke="#CCCCDD" stroke-width="1"/>
+<text x="1232" y="563" text-anchor="middle" font-size="12" font-weight="700" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Composition &amp; Key OOP Concepts</text>
+<polygon points="190,179 182,193 198,193" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="190" y1="193" x2="190" y2="229" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<polygon points="190,281 182,295 198,295" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="190" y1="295" x2="190" y2="309" stroke="#555555" stroke-width="1.5"/>
+<line x1="104" y1="309" x2="266" y2="309" stroke="#555555" stroke-width="1.5"/>
+<line x1="104" y1="309" x2="104" y2="337" stroke="#555555" stroke-width="1.5"/>
+<line x1="264" y1="309" x2="264" y2="337" stroke="#555555" stroke-width="1.5"/>
+<line x1="106" y1="309" x2="106" y2="387" stroke="#555555" stroke-width="1.5"/>
+<line x1="266" y1="309" x2="266" y2="387" stroke="#555555" stroke-width="1.5"/>
+<polygon points="490,179 482,193 498,193" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="490" y1="193" x2="490" y2="229" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<polygon points="490,281 482,295 498,295" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="490" y1="295" x2="490" y2="307" stroke="#555555" stroke-width="1.5"/>
+<line x1="439" y1="307" x2="679" y2="307" stroke="#555555" stroke-width="1.5"/>
+<line x1="439" y1="307" x2="439" y2="331" stroke="#555555" stroke-width="1.5"/>
+<line x1="559" y1="307" x2="559" y2="331" stroke="#555555" stroke-width="1.5"/>
+<line x1="679" y1="307" x2="679" y2="331" stroke="#555555" stroke-width="1.5"/>
+<polygon points="657,179 649,193 665,193" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="657" y1="193" x2="657" y2="229" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="605" y1="105" x2="605" y2="525" stroke="#CCCCDD" stroke-width="1" stroke-dasharray="4,4"/>
+<polygon points="945,167 937,181 953,181" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="945" y1="181" x2="945" y2="217" stroke="#555555" stroke-width="1.5"/>
+<polygon points="945,269 937,283 953,283" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="945" y1="283" x2="945" y2="297" stroke="#555555" stroke-width="1.5"/>
+<line x1="822" y1="297" x2="1054" y2="297" stroke="#555555" stroke-width="1.5"/>
+<line x1="822" y1="297" x2="822" y2="323" stroke="#555555" stroke-width="1.5"/>
+<line x1="938" y1="297" x2="938" y2="323" stroke="#555555" stroke-width="1.5"/>
+<line x1="1054" y1="297" x2="1054" y2="323" stroke="#555555" stroke-width="1.5"/>
+<polygon points="1054,363 1046,377 1062,377" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="1054" y1="377" x2="1063" y2="401" stroke="#555555" stroke-width="1.5"/>
+<polygon points="1331,315 1345,307 1345,323" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="1345" y1="315" x2="1357" y2="315" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="185" x2="1357" y2="445" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="185" x2="1367" y2="185" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="237" x2="1367" y2="237" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="289" x2="1367" y2="289" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="341" x2="1367" y2="341" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="393" x2="1367" y2="393" stroke="#555555" stroke-width="1.5"/>
+<line x1="1357" y1="445" x2="1367" y2="445" stroke="#555555" stroke-width="1.5"/>
+<polygon points="134,629 126,643 142,643" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="134" y1="643" x2="134" y2="684" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="134" y1="754" x2="134" y2="724" stroke="#555555" stroke-width="1.5"/>
+<polygon points="134,754 128,744 140,744" fill="#555555" stroke="#555555" stroke-width="1"/>
+<line x1="417" y1="617" x2="417" y2="657" stroke="#555555" stroke-width="1.5"/>
+<polygon points="417,617 411,627 423,627" fill="#555555" stroke="#555555" stroke-width="1"/>
+<line x1="700" y1="597" x2="730" y2="597" stroke="#555555" stroke-width="1.5"/>
+<line x1="689" y1="669" x2="627" y2="617" stroke="#555555" stroke-width="1.5"/>
+<line x1="749" y1="669" x2="800" y2="617" stroke="#555555" stroke-width="1.5"/>
+<polygon points="627,799 619,813 635,813" fill="white" stroke="#555555" stroke-width="1.5"/>
+<line x1="627" y1="813" x2="802" y2="747" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="719" y1="709" x2="627" y2="747" stroke="#555555" stroke-width="1.5" stroke-dasharray="5,3"/>
+<rect x="85" y="127" width="210" height="52" rx="3" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="85" y1="149" x2="295" y2="149" stroke="#2E79B5" stroke-width="1" opacity="0.4"/>
+<text x="190" y="141" text-anchor="middle" font-size="9" font-style="italic" fill="#2E79B5" font-family="Arial, Helvetica, sans-serif">«interface»</text>
+<text x="190" y="164" text-anchor="middle" font-size="11" font-weight="600" font-style="normal" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">DifferentiableFunction</text>
+<rect x="85" y="229" width="210" height="52" rx="3" fill="#F5F5F5" stroke="#555555" stroke-width="1.5"/>
+<line x1="85" y1="251" x2="295" y2="251" stroke="#555555" stroke-width="1" opacity="0.4"/>
+<text x="190" y="243" text-anchor="middle" font-size="9" font-style="italic" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">«abstract»</text>
+<text x="190" y="266" text-anchor="middle" font-size="11" font-weight="600" font-style="italic" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ActivationFunction</text>
+<rect x="30" y="337" width="148" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="104" y="361" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">TanhActivation</text>
+<rect x="190" y="337" width="148" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="264" y="361" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ReluActivation</text>
+<rect x="30" y="387" width="152" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="106" y="411" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SigmoidActivation</text>
+<rect x="190" y="387" width="152" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="266" y="411" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">LinearActivation</text>
+<rect x="385" y="127" width="210" height="52" rx="3" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="385" y1="149" x2="595" y2="149" stroke="#2E79B5" stroke-width="1" opacity="0.4"/>
+<text x="490" y="141" text-anchor="middle" font-size="9" font-style="italic" fill="#2E79B5" font-family="Arial, Helvetica, sans-serif">«interface»</text>
+<text x="490" y="164" text-anchor="middle" font-size="11" font-weight="600" font-style="normal" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">DifferentiableFunction</text>
+<rect x="385" y="229" width="210" height="52" rx="3" fill="#F5F5F5" stroke="#555555" stroke-width="1.5"/>
+<line x1="385" y1="251" x2="595" y2="251" stroke="#555555" stroke-width="1" opacity="0.4"/>
+<text x="490" y="243" text-anchor="middle" font-size="9" font-style="italic" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">«abstract»</text>
+<text x="490" y="266" text-anchor="middle" font-size="11" font-weight="600" font-style="italic" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">RegularizationFunction</text>
+<rect x="383" y="331" width="112" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="439" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">NoRegularization</text>
+<rect x="503" y="331" width="112" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="559" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">L1Regularization</text>
+<rect x="623" y="331" width="112" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="679" y="355" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">L2Regularization</text>
+<rect x="581" y="127" width="152" height="52" rx="3" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="581" y1="149" x2="733" y2="149" stroke="#2E79B5" stroke-width="1" opacity="0.4"/>
+<text x="657" y="141" text-anchor="middle" font-size="9" font-style="italic" fill="#2E79B5" font-family="Arial, Helvetica, sans-serif">«interface»</text>
+<text x="657" y="164" text-anchor="middle" font-size="11" font-weight="600" font-style="normal" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ErrorFunction</text>
+<rect x="581" y="229" width="152" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="657" y="253" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SquaredError</text>
+<rect x="840" y="127" width="210" height="40" rx="3" fill="#EEEEEE" stroke="#999999" stroke-width="1.5" stroke-dasharray="4,4"/>
+<text x="945" y="151" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">RuntimeException</text>
+<rect x="840" y="217" width="210" height="52" rx="3" fill="#F5F5F5" stroke="#555555" stroke-width="1.5"/>
+<line x1="840" y1="239" x2="1050" y2="239" stroke="#555555" stroke-width="1" opacity="0.4"/>
+<text x="945" y="231" text-anchor="middle" font-size="9" font-style="italic" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">«abstract»</text>
+<text x="945" y="254" text-anchor="middle" font-size="11" font-weight="600" font-style="italic" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">PlaygroundException</text>
+<rect x="768" y="323" width="108" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="822" y="347" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ConfigurationException</text>
+<rect x="884" y="323" width="108" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="938" y="347" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">TrainingException</text>
+<rect x="1000" y="323" width="108" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1054" y="347" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">NotFoundException</text>
+<rect x="1000" y="401" width="126" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1063" y="425" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SessionNotFoundException</text>
+<rect x="1159" y="289" width="172" height="52" rx="3" fill="#F5F5F5" stroke="#555555" stroke-width="1.5"/>
+<line x1="1159" y1="311" x2="1331" y2="311" stroke="#555555" stroke-width="1" opacity="0.4"/>
+<text x="1245" y="303" text-anchor="middle" font-size="9" font-style="italic" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">«abstract»</text>
+<text x="1245" y="326" text-anchor="middle" font-size="11" font-weight="600" font-style="italic" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">DataGenerator</text>
+<rect x="1367" y="165" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="189" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">CircleDataset</text>
+<rect x="1367" y="217" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="241" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">XorDataset</text>
+<rect x="1367" y="269" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="293" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">GaussianDataset</text>
+<rect x="1367" y="321" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="345" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SpiralDataset</text>
+<rect x="1367" y="373" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="397" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">PlaneRegressionDataset</text>
+<rect x="1367" y="425" width="158" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="1446" y="449" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">GaussianRegressionDataset</text>
+<rect x="50" y="577" width="168" height="52" rx="3" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="50" y1="599" x2="218" y2="599" stroke="#2E79B5" stroke-width="1" opacity="0.4"/>
+<text x="134" y="591" text-anchor="middle" font-size="9" font-style="italic" fill="#2E79B5" font-family="Arial, Helvetica, sans-serif">«interface»</text>
+<text x="134" y="614" text-anchor="middle" font-size="11" font-weight="600" font-style="normal" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Trainable</text>
+<rect x="50" y="684" width="168" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="134" y="708" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Session</text>
+<rect x="50" y="754" width="168" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="134" y="778" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SessionManager</text>
+<rect x="335" y="577" width="165" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="417" y="601" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ApiServer</text>
+<rect x="330" y="657" width="175" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="417" y="681" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">RequestHandlers</text>
+<text x="230" y="699" font-size="9" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">has-a DataGenerator</text>
+<text x="230" y="715" font-size="9" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">has-a ActivationFunction</text>
+<text x="230" y="731" font-size="9" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">has-a RegularizationFunction</text>
+<text x="230" y="747" font-size="9" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">has-a List&lt;List&lt;Node&gt;&gt;</text>
+<rect x="555" y="577" width="145" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="627" y="601" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Node</text>
+<rect x="730" y="577" width="140" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="800" y="601" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Link</text>
+<rect x="637" y="669" width="165" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="719" y="693" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">NeuralNetwork</text>
+<rect x="555" y="747" width="145" height="52" rx="3" fill="#EBF2FA" stroke="#2E79B5" stroke-width="1.5" stroke-dasharray="5,3"/>
+<line x1="555" y1="769" x2="700" y2="769" stroke="#2E79B5" stroke-width="1" opacity="0.4"/>
+<text x="627" y="761" text-anchor="middle" font-size="9" font-style="italic" fill="#2E79B5" font-family="Arial, Helvetica, sans-serif">«interface»</text>
+<text x="627" y="784" text-anchor="middle" font-size="11" font-weight="600" font-style="normal" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">ErrorFunction</text>
+<rect x="730" y="747" width="145" height="40" rx="3" fill="#FFFFFF" stroke="#333333" stroke-width="1.5"/>
+<text x="802" y="771" text-anchor="middle" font-size="11" font-weight="600" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">SquaredError</text>
+<text x="936" y="592" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Encapsulation</text>
+<text x="1111" y="592" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Node, Link, Session, Example2D — all fields private</text>
+<rect x="928" y="607" width="609" height="26" rx="2" fill="#F0F1F8" stroke="none"/>
+<text x="936" y="624" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Inheritance</text>
+<text x="1111" y="624" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">ActivationFunction(4) · RegularizationFunction(3) · DataGenerator(6) · PlaygroundException(4)</text>
+<text x="936" y="656" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Polymorphism</text>
+<text x="1111" y="656" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">activation.output(x) → Tanh/ReLU/Sigmoid/Linear at runtime</text>
+<rect x="928" y="671" width="609" height="26" rx="2" fill="#F0F1F8" stroke="none"/>
+<text x="936" y="688" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Abstraction</text>
+<text x="1111" y="688" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">DifferentiableFunction · ErrorFunction · Trainable (interfaces)</text>
+<text x="936" y="720" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Composition</text>
+<text x="1111" y="720" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Session has-a {DataGenerator, ActivationFunction, RegFn, List&lt;List&lt;Node&gt;&gt;}</text>
+<rect x="928" y="735" width="609" height="26" rx="2" fill="#F0F1F8" stroke="none"/>
+<text x="936" y="752" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Overloading</text>
+<text x="1111" y="752" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Session.trainOneEpoch(lr,rr,batch)  and  Session.trainOneEpoch()</text>
+<text x="936" y="784" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">final</text>
+<text x="1111" y="784" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Example2D (immutable) · TanhActivation (leaf) · getHttpStatus() (final method)</text>
+<rect x="928" y="799" width="609" height="26" rx="2" fill="#F0F1F8" stroke="none"/>
+<text x="936" y="816" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Static Factory</text>
+<text x="1111" y="816" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">Activations.byKey()  · Regularizations.byKey()  · DatasetRegistry.byKey()</text>
+<text x="936" y="848" font-size="11" font-weight="700" fill="#1A1A2E" font-family="Arial, Helvetica, sans-serif">Exc. Hierarchy</text>
+<text x="1111" y="848" font-size="9.5" fill="#5A5A7A" font-family="Arial, Helvetica, sans-serif">PlaygroundException → {ConfigurationEx(400) · TrainingEx(500) · NotFoundException(404)}</text>
+</svg>
