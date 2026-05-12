@@ -17,7 +17,7 @@ The UI faithfully reproduces every knob from the original:
 
 * 4 classification datasets (circle, XOR, gaussian, spiral) and 2 regression
   datasets (plane, multi-gaussian)
-* 7 engineered input features (X₁, X₂, X₁², X₂², X₁X₂, sin(X₁), sin(X₂))
+* 2D input coordinates (X₁ and X₂) as the input layer
 * 0 - 6 hidden layers, each with 1 - 8 neurons (configurable per layer)
 * 4 activations (Tanh, ReLU, Sigmoid, Linear) and 3 regularisers (None, L1, L2)
 * Live decision boundary heat-map, per-node mini heat-maps, hover tooltips
@@ -102,9 +102,7 @@ curl http://localhost:8080/health
 Or in the UI: pick **circle**, hit **Play**, and within ~50 epochs the loss
 should plummet from ~0.5 to <0.01.
 
-Switch to **spiral**, bump the network to 3 hidden layers of 8 neurons each,
-turn on every feature, and watch the decision boundary morph as the network
-trains.
+Switch to **spiral**, bump the network to 3 hidden layers of 8 neurons each, and watch the decision boundary morph as the network trains.
 
 ## Repository layout
 

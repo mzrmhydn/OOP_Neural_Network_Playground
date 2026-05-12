@@ -1,12 +1,11 @@
 /**
  * Color utilities shared by the heatmap and the network graph.
- * The 3-stop gradient (negative -> neutral -> positive) matches the
- * original Tensorflow Playground for a familiar visual identity.
+ * Three-stop gradient: rose (negative) → stone (neutral) → emerald (positive).
  */
 
-const NEGATIVE = [0xf5, 0x93, 0x22] as const;
-const NEUTRAL  = [0xe8, 0xea, 0xeb] as const;
-const POSITIVE = [0x08, 0x77, 0xbd] as const;
+const NEGATIVE = [0xf4, 0x3f, 0x5e] as const;
+const NEUTRAL = [0x78, 0x71, 0x6c] as const;
+const POSITIVE = [0x34, 0xd3, 0x99] as const;
 
 export function clamp(v: number, lo: number, hi: number): number {
   return v < lo ? lo : v > hi ? hi : v;

@@ -6,7 +6,8 @@ html,
 body,
 #root {
   height: 100%;
-  background: #f3f4f6;
+  background: #0c0a10;
+  color-scheme: dark;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: Roboto, ui-sans-serif, system-ui, "Helvetica Neue", Arial,
     sans-serif;
-  color: #111827;
+  color: #f5f0ff;
 }
 
 /* Hide spin buttons on number inputs (consistent across browsers). */
@@ -24,8 +25,8 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-input[type="number"] {
-  -moz-appearance: textfield;
+input[type="checkbox"] {
+  accent-color: #f59e0b;
 }
 
 /* Custom range slider */
@@ -33,7 +34,7 @@ input[type="number"] {
   -webkit-appearance: none;
   appearance: none;
   height: 4px;
-  background: #d1d5db;
+  background: #4c3d6b;
   border-radius: 2px;
   outline: none;
 }
@@ -43,7 +44,7 @@ input[type="number"] {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #0877bd;
+  background: #f59e0b;
   cursor: pointer;
   border: none;
 }
@@ -51,7 +52,7 @@ input[type="number"] {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #0877bd;
+  background: #f59e0b;
   cursor: pointer;
   border: none;
 }

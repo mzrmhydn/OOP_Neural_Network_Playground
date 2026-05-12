@@ -9,8 +9,7 @@ import java.util.function.DoubleBinaryOperator;
 /**
  * Hand-crafted feature transformations used as the input layer of the network.
  *
- * <p>The set mirrors the original Tensorflow Playground: the raw coordinates
- * X1, X2, their squares and their interactions with sin / cos.
+ * <p>Input layer uses the 2D coordinates X1 and X2 only.
  *
  * <p><b>OOP note</b>: in Java, an {@code enum} is a class whose values are
  * singletons. Each constant below provides its own implementation of
@@ -22,13 +21,8 @@ import java.util.function.DoubleBinaryOperator;
 public final class InputFeatures {
 
     public enum Feature {
-        X        ("x",        (x, y) -> x),
-        Y        ("y",        (x, y) -> y),
-        X_SQUARED("xSquared", (x, y) -> x * x),
-        Y_SQUARED("ySquared", (x, y) -> y * y),
-        X_TIMES_Y("xTimesY",  (x, y) -> x * y),
-        SIN_X    ("sinX",     (x, y) -> Math.sin(x)),
-        SIN_Y    ("sinY",     (x, y) -> Math.sin(y));
+        X("x", (x, y) -> x),
+        Y("y", (x, y) -> y);
 
         private final String key;
         private final DoubleBinaryOperator op;

@@ -305,7 +305,7 @@ export default function App() {
 
   // ----- render -----------------------------------------------------
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-pg-bg">
       <Header />
       <Controls
         isPlaying={isPlaying}
@@ -326,12 +326,12 @@ export default function App() {
         batchSize={batchSize}
         onBatchSize={setBatchSize}
       />
-      <main className="flex flex-1 gap-4 p-4">
+      <main className="flex flex-1 gap-4 p-4 bg-pg-bg">
         {/* Data column */}
         <section className="w-56 space-y-4">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500">Data</h2>
+          <h2 className="text-xs uppercase tracking-wide text-pg-dim">Data</h2>
           <div>
-            <p className="text-xs text-gray-600 mb-1">Which dataset?</p>
+            <p className="text-xs text-pg-muted mb-1">Which dataset?</p>
             <DatasetSelector
               problem={config.problem}
               classificationDataset={config.dataset}
@@ -360,7 +360,7 @@ export default function App() {
           <button
             type="button"
             onClick={() => void regenerateData()}
-            className="px-3 py-1.5 text-xs rounded border border-gray-300 bg-white hover:bg-gray-100 w-full"
+            className="px-3 py-1.5 text-xs rounded border border-pg-border bg-pg-raised hover:bg-pg-panel text-pg-text w-full"
           >
             Regenerate data
           </button>
@@ -376,8 +376,8 @@ export default function App() {
 
         {/* Features column */}
         <section className="w-44 space-y-2">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500">Features</h2>
-          <p className="text-xs text-gray-600 mb-1">Which inputs?</p>
+          <h2 className="text-xs uppercase tracking-wide text-pg-dim">Features</h2>
+          <p className="text-xs text-pg-muted mb-1">Which inputs?</p>
           <FeatureSelector
             active={config.features}
             boundaries={boundaries.boundaries}
@@ -389,7 +389,7 @@ export default function App() {
 
         {/* Network column */}
         <section className="flex-1 min-w-0 overflow-x-auto">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500 mb-2">
+          <h2 className="text-xs uppercase tracking-wide text-pg-dim mb-2">
             Network
           </h2>
           {snapshot && (
@@ -413,19 +413,19 @@ export default function App() {
 
         {/* Output column */}
         <section className="w-80">
-          <h2 className="text-xs uppercase tracking-wide text-gray-500 mb-2">
+          <h2 className="text-xs uppercase tracking-wide text-pg-dim mb-2">
             Output
           </h2>
-          <div className="space-y-2 text-xs text-gray-600">
+          <div className="space-y-2 text-xs text-pg-muted">
             <div className="flex items-center gap-3">
               <span>Test loss</span>
-              <span className="font-mono text-gray-900 text-sm">
+              <span className="font-mono text-pg-text text-sm">
                 {(snapshot?.lossTest ?? 0).toFixed(3)}
               </span>
             </div>
             <div className="flex items-center gap-3">
               <span>Train loss</span>
-              <span className="font-mono text-gray-900 text-sm">
+              <span className="font-mono text-pg-text text-sm">
                 {(snapshot?.lossTrain ?? 0).toFixed(3)}
               </span>
             </div>
@@ -459,7 +459,7 @@ export default function App() {
                 discretize={discretize}
                 showAxes
               />
-              <p className="text-[11px] text-gray-500 mt-1">
+              <p className="text-[11px] text-pg-dim mt-1">
                 {selectedNodeId
                   ? `Decision boundary of node ${selectedNodeId}`
                   : "Decision boundary of the network"}
@@ -469,12 +469,12 @@ export default function App() {
         </section>
       </main>
       {error && (
-        <div className="fixed bottom-4 right-4 max-w-sm bg-red-600 text-white text-sm px-3 py-2 rounded shadow-lg flex items-start gap-2">
+        <div className="fixed bottom-4 right-4 max-w-sm bg-rose-950 border border-rose-700/80 text-rose-100 text-sm px-3 py-2 rounded-lg shadow-lg shadow-black/40 flex items-start gap-2">
           <span className="flex-1">{error}</span>
           <button
             type="button"
             onClick={() => setError(null)}
-            className="text-white/80 hover:text-white"
+            className="text-rose-300/80 hover:text-rose-100"
             aria-label="dismiss"
           >
             ×
@@ -487,15 +487,15 @@ export default function App() {
 
 function Header() {
   return (
-    <header className="flex items-center gap-3 px-4 py-2 bg-positive text-white">
-      <div className="w-8 h-8 rounded bg-white/20 flex items-center justify-center text-xs font-bold">
+    <header className="flex items-center gap-3 px-4 py-2.5 bg-gradient-to-r from-violet-950 via-fuchsia-950 to-indigo-950 text-violet-50 border-b border-violet-800/60 shadow-lg shadow-black/30">
+      <div className="w-8 h-8 rounded-md bg-amber-500/25 border border-amber-400/40 flex items-center justify-center text-xs font-bold text-amber-200">
         NN
       </div>
       <div>
-        <h1 className="text-base font-semibold leading-tight">
+        <h1 className="text-base font-semibold leading-tight tracking-tight">
           Neural Network Playground
         </h1>
-        <p className="text-xs opacity-80">
+        <p className="text-xs text-violet-300/90">
           Java backend · React + Tailwind frontend
         </p>
       </div>
@@ -519,7 +519,7 @@ function Slider({
   onChange: (v: number) => void;
 }) {
   return (
-    <label className="block text-xs text-gray-600 space-y-1">
+    <label className="block text-xs text-pg-muted space-y-1">
       <span>{label}</span>
       <input
         className="slider w-full"

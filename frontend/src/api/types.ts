@@ -3,14 +3,7 @@ export type Regularization = "none" | "L1" | "L2";
 export type Problem = "classification" | "regression";
 export type ClassificationDataset = "circle" | "xor" | "gauss" | "spiral";
 export type RegressionDataset = "reg-plane" | "reg-gauss";
-export type FeatureKey =
-  | "x"
-  | "y"
-  | "xSquared"
-  | "ySquared"
-  | "xTimesY"
-  | "sinX"
-  | "sinY";
+export type FeatureKey = "x" | "y";
 
 export interface Config {
   dataset: ClassificationDataset;

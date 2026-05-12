@@ -55,12 +55,12 @@ export function Controls({
   onBatchSize,
 }: ControlsProps) {
   return (
-    <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 bg-white border-b border-gray-200">
+    <div className="flex flex-wrap items-center gap-x-6 gap-y-3 px-4 py-3 bg-pg-panel border-b border-pg-border">
       <div className="flex items-center gap-2">
         <button
           type="button"
           onClick={onReset}
-          className="w-10 h-10 rounded-full border border-gray-300 bg-white hover:bg-gray-100 flex items-center justify-center"
+          className="w-10 h-10 rounded-full border border-pg-border bg-pg-raised hover:bg-violet-950/50 text-pg-text flex items-center justify-center"
           aria-label="reset"
           title="Reset"
         >
@@ -71,7 +71,7 @@ export function Controls({
         <button
           type="button"
           onClick={onPlayPause}
-          className="w-12 h-12 rounded-full bg-positive text-white hover:opacity-90 flex items-center justify-center"
+          className="w-12 h-12 rounded-full bg-amber-500 text-violet-950 hover:bg-amber-400 shadow-md shadow-amber-900/30 flex items-center justify-center"
           aria-label={isPlaying ? "pause" : "play"}
           title={isPlaying ? "Pause" : "Play"}
         >
@@ -82,7 +82,7 @@ export function Controls({
         <button
           type="button"
           onClick={onStep}
-          className="w-10 h-10 rounded-full border border-gray-300 bg-white hover:bg-gray-100 flex items-center justify-center"
+          className="w-10 h-10 rounded-full border border-pg-border bg-pg-raised hover:bg-violet-950/50 text-pg-text flex items-center justify-center"
           aria-label="step"
           title="One step"
         >
@@ -93,7 +93,7 @@ export function Controls({
       </div>
 
       <Field label="Epoch">
-        <span className="font-mono text-sm">{iter.toString().padStart(6, "0")}</span>
+        <span className="font-mono text-sm text-amber-300/95">{iter.toString().padStart(6, "0")}</span>
       </Field>
 
       <Field label="Learning rate">
@@ -164,7 +164,7 @@ export function Controls({
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <label className="flex flex-col text-xs text-gray-500 gap-1">
+    <label className="flex flex-col text-xs text-pg-dim gap-1">
       <span>{label}</span>
       {children}
     </label>
@@ -182,7 +182,7 @@ function Select<T extends string>({
 }) {
   return (
     <select
-      className="border border-gray-300 rounded px-2 py-1 text-sm bg-white"
+      className="border border-pg-border rounded px-2 py-1 text-sm bg-pg-raised text-pg-text"
       value={value}
       onChange={(e) => onChange(e.target.value as T)}
     >

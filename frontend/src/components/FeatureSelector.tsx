@@ -1,24 +1,11 @@
 import type { FeatureKey } from "../api/types";
 import { Heatmap } from "./Heatmap";
 
-const ALL: FeatureKey[] = [
-  "x",
-  "y",
-  "xSquared",
-  "ySquared",
-  "xTimesY",
-  "sinX",
-  "sinY",
-];
+const ALL: FeatureKey[] = ["x", "y"];
 
 export const FEATURE_LABELS: Record<FeatureKey, string> = {
   x: "X₁",
   y: "X₂",
-  xSquared: "X₁²",
-  ySquared: "X₂²",
-  xTimesY: "X₁X₂",
-  sinX: "sin(X₁)",
-  sinY: "sin(X₂)",
 };
 
 export interface FeatureSelectorProps {
@@ -30,7 +17,7 @@ export interface FeatureSelectorProps {
 }
 
 /**
- * Lets the user pick which engineered features feed the input layer.
+ * Lets the user pick which input coordinates feed the input layer.
  * Every feature is shown as a small heatmap preview to visualise its shape.
  */
 export function FeatureSelector({
@@ -53,8 +40,8 @@ export function FeatureSelector({
             className={
               "w-full flex items-center gap-2 p-1 rounded border " +
               (isOn
-                ? "border-positive bg-positive/5"
-                : "border-gray-300 opacity-60 hover:opacity-90")
+                ? "border-amber-500/70 bg-amber-500/10 shadow-sm shadow-amber-900/20"
+                : "border-pg-border opacity-70 hover:opacity-100 hover:border-fuchsia-800/60")
             }
           >
             <Heatmap
@@ -65,7 +52,7 @@ export function FeatureSelector({
               showPoints={false}
             />
             <span
-              className={"text-xs " + (isOn ? "text-gray-800" : "text-gray-500")}
+              className={"text-xs " + (isOn ? "text-pg-text" : "text-pg-dim")}
             >
               {FEATURE_LABELS[key]}
             </span>

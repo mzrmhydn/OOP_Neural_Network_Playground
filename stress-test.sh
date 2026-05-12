@@ -42,7 +42,7 @@ for cfg in \
   '{"dataset":"circle","networkShape":[4,2]} 200 0.05' \
   '{"dataset":"xor","networkShape":[4,2]} 300 0.05' \
   '{"dataset":"gauss","networkShape":[4,2]} 100 0.01' \
-  '{"dataset":"spiral","features":["x","y","xSquared","ySquared","xTimesY","sinX","sinY"],"networkShape":[8,8],"activation":"relu"} 500 0.1' \
+  '{"dataset":"spiral","features":["x","y"],"networkShape":[8,8],"activation":"relu"} 500 0.1' \
   '{"problem":"regression","regDataset":"reg-plane","networkShape":[4,2]} 200 0.05' \
   '{"problem":"regression","regDataset":"reg-gauss","networkShape":[6,4],"activation":"relu"} 300 0.1'
 do

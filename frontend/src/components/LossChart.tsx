@@ -56,7 +56,7 @@ export function LossChart({
     }
 
     // gridlines (4 horizontal)
-    ctx.strokeStyle = "rgba(0, 0, 0, 0.06)";
+    ctx.strokeStyle = "rgba(244, 240, 255, 0.08)";
     ctx.lineWidth = 1;
     for (let i = 1; i < 4; i++) {
       ctx.beginPath();
@@ -65,14 +65,14 @@ export function LossChart({
       ctx.stroke();
     }
 
-    drawSeries(0, "#777");
-    drawSeries(1, "#111");
+    drawSeries(0, "#fbbf24");
+    drawSeries(1, "#c4b5fd");
   }, [history, width, height]);
 
   return (
     <canvas
       ref={ref}
-      className="block bg-gray-50 rounded"
+      className="block bg-pg-raised rounded border border-pg-border/60"
       style={{ width, height }}
     />
   );

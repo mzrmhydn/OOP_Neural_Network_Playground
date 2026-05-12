@@ -131,7 +131,7 @@ export function NetworkGraph({
                   <path
                     d={lp.path}
                     fill="none"
-                    stroke={lp.dead ? "#d1d5db" : lp.color}
+                    stroke={lp.dead ? "#57534e" : lp.color}
                     strokeWidth={lp.width}
                     strokeOpacity={lp.dead ? 0.4 : 0.85}
                     style={{ pointerEvents: "stroke" }}
@@ -184,8 +184,8 @@ export function NetworkGraph({
                     width={NODE_SIZE}
                     height={NODE_SIZE}
                     rx={4}
-                    fill="#fff"
-                    stroke={selected ? "#0877bd" : "#9ca3af"}
+                    fill="#1f1830"
+                    stroke={selected ? "#f59e0b" : "#6b5b8c"}
                     strokeWidth={selected ? 2 : 1}
                   />
                   {!isInput && (
@@ -195,7 +195,7 @@ export function NetworkGraph({
                       width={5}
                       height={5}
                       fill={valueToHex(node.bias)}
-                      stroke="#9ca3af"
+                      stroke="#6b5b8c"
                       onMouseEnter={(e) => {
                         e.stopPropagation();
                         const rect =
@@ -216,7 +216,7 @@ export function NetworkGraph({
                       y={NODE_SIZE / 2 + 4}
                       textAnchor="end"
                       fontSize={11}
-                      fill="#374151"
+                      fill="#ddd6fe"
                     >
                       {featureLabels[node.id] ?? node.id}
                     </text>
@@ -227,7 +227,7 @@ export function NetworkGraph({
                       y={NODE_SIZE / 2 + 4}
                       textAnchor="start"
                       fontSize={11}
-                      fill="#374151"
+                      fill="#ddd6fe"
                     >
                       output
                     </text>
@@ -274,7 +274,7 @@ export function NetworkGraph({
                   <button
                     type="button"
                     aria-label={`add neuron to layer ${li}`}
-                    className="w-6 h-6 rounded-full bg-white border border-gray-300 hover:bg-gray-100 text-gray-600 text-base leading-none flex items-center justify-center"
+                    className="w-6 h-6 rounded-full bg-pg-raised border border-pg-border hover:bg-violet-950/60 text-pg-muted text-base leading-none flex items-center justify-center"
                     onClick={() => onAddNeuron(li - 1)}
                     disabled={layer.length >= 16}
                   >
@@ -283,13 +283,13 @@ export function NetworkGraph({
                   <button
                     type="button"
                     aria-label={`remove neuron from layer ${li}`}
-                    className="w-6 h-6 rounded-full bg-white border border-gray-300 hover:bg-gray-100 text-gray-600 text-base leading-none flex items-center justify-center"
+                    className="w-6 h-6 rounded-full bg-pg-raised border border-pg-border hover:bg-violet-950/60 text-pg-muted text-base leading-none flex items-center justify-center"
                     onClick={() => onRemoveNeuron(li - 1)}
                     disabled={layer.length <= 1}
                   >
                   </button>
                 </div>
-                <div className="text-xs text-gray-600 mt-1 whitespace-nowrap">
+                <div className="text-xs text-pg-muted mt-1 whitespace-nowrap">
                   {layer.length} neuron{layer.length !== 1 ? "s" : ""}
                 </div>
               </div>
@@ -303,7 +303,7 @@ export function NetworkGraph({
         <button
           type="button"
           onClick={onAddLayer}
-          className="px-2 py-1 text-xs rounded border border-gray-300 bg-white hover:bg-gray-100"
+          className="px-2 py-1 text-xs rounded border border-pg-border bg-pg-raised hover:bg-violet-950/50 text-pg-text"
           disabled={layers.length - 2 >= 6}
         >
           + Add layer
@@ -311,12 +311,12 @@ export function NetworkGraph({
         <button
           type="button"
           onClick={onRemoveLayer}
-          className="px-2 py-1 text-xs rounded border border-gray-300 bg-white hover:bg-gray-100"
+          className="px-2 py-1 text-xs rounded border border-pg-border bg-pg-raised hover:bg-violet-950/50 text-pg-text"
           disabled={layers.length - 2 <= 0}
         >
           − Remove layer
         </button>
-        <span className="text-xs text-gray-500">
+        <span className="text-xs text-pg-dim">
           {layers.length - 2} hidden layer{layers.length - 2 !== 1 ? "s" : ""}
           {features.length > 0 && (
             <>
@@ -329,7 +329,7 @@ export function NetworkGraph({
 
       {hovered && (
         <div
-          className="absolute pointer-events-none bg-black bg-opacity-75 text-white text-xs px-2 py-1 rounded"
+          className="absolute pointer-events-none bg-violet-950/95 border border-pg-border text-pg-text text-xs px-2 py-1 rounded-md shadow-lg"
           style={{
             left: hovered.x + 14,
             top: hovered.y - 12,

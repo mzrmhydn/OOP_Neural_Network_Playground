@@ -58,15 +58,15 @@ export function DatasetSelector({
           onClick={item.onClick}
           aria-pressed={item.selected}
           className={
-            "border rounded p-1 transition-colors flex flex-col items-center bg-white " +
+            "border rounded p-1 transition-colors flex flex-col items-center bg-pg-raised " +
             (item.selected
-              ? "border-positive ring-2 ring-positive/40"
-              : "border-gray-300 hover:border-gray-400")
+              ? "border-amber-500 ring-2 ring-amber-500/35 shadow-md shadow-black/30"
+              : "border-pg-border hover:border-fuchsia-800/70")
           }
           title={LABELS[item.key] ?? item.key}
         >
           <Thumbnail data={thumbnails[item.key]} />
-          <span className="text-[10px] text-gray-600 mt-0.5">
+          <span className="text-[10px] text-pg-muted mt-0.5">
             {LABELS[item.key] ?? item.key}
           </span>
         </button>

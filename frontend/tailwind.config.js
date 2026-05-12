@@ -4,9 +4,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        positive: "#0877bd",
-        negative: "#f59322",
-        neutral: "#e8eaeb",
+        /** Decision-boundary gradient (replaces cool blue / warm orange). */
+        positive: "#34d399",
+        negative: "#f43f5e",
+        neutral: "#78716c",
+        /** App chrome — deep violet night theme */
+        pg: {
+          bg: "#0c0a10",
+          panel: "#15101f",
+          raised: "#1f1830",
+          border: "#4c3d6b",
+          text: "#f5f0ff",
+          muted: "#a898c9",
+          dim: "#7d6ca3",
+        },
       },
       fontFamily: {
         sans: [

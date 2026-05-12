@@ -157,7 +157,7 @@ function Axes({
     size - ((v - domain[0]) / (domain[1] - domain[0])) * size + padding;
   return (
     <svg
-      className="absolute pointer-events-none text-gray-500"
+      className="absolute pointer-events-none text-pg-dim"
       style={{ left: 0, top: 0, width: size + 2 * padding, height: size + 2 * padding }}
     >
       {/* x axis (bottom) */}

@@ -113,7 +113,7 @@ All endpoints accept and return `application/json`. CORS is enabled for any orig
 | `regularization` | `none` \| `L1` \| `L2` | weight regularization |
 | `initZero` | boolean | initialise weights/biases to 0 |
 | `networkShape` | int[]  | sizes of hidden layers (each in `[1, 16]`, max 8 hidden layers) |
-| `features` | string[] | any subset of `x`, `y`, `xSquared`, `ySquared`, `xTimesY`, `sinX`, `sinY` |
+| `features` | string[] | `x` and/or `y` (2D input coordinates) |
 
 ### Snapshot shape
 
